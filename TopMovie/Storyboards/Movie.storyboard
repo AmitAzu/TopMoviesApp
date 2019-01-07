@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dUm-vV-xcd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MovieVC-->
+        <scene sceneID="eY7-vq-7Yh">
+            <objects>
+                <viewController id="dUm-vV-xcd" customClass="MovieVC" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="11u-WG-qP7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.64999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="hdI-Ix-vjz">
+                                <rect key="frame" x="42" y="89" width="213" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="5gj-oC-iXO"/>
+                                    <constraint firstAttribute="width" constant="213" id="JMj-2l-Ylv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vTI-J5-vs0">
+                                <rect key="frame" x="42" y="238" width="291" height="211"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="7n4-Pl-2eC"/>
+                                    <constraint firstAttribute="height" constant="211" id="ent-vn-q4G"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O8y-jL-7FT">
+                                <rect key="frame" x="42" y="470" width="291" height="127"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="Ygh-rX-kMk"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" smartDashesType="yes" smartInsertDeleteType="yes"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUj-Ho-KBK" customClass="MBCircularProgressBarView">
+                                <rect key="frame" x="263" y="75" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="JH5-UF-5Xu"/>
+                                    <constraint firstAttribute="width" constant="70" id="Uf2-Oa-H7u"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" red="0.94901960780000005" green="0.59215686270000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressRotationAngle">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressAngle">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressLineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="emptyLineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" red="0.94901960780000005" green="0.59215686270000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressStrokeColor">
+                                        <color key="value" red="0.94901960780000005" green="0.59215686270000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyLineColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyLineStrokeColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eH0-hT-hiP">
+                                <rect key="frame" x="94" y="153" width="186" height="49"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="eH0-hT-hiP" secondAttribute="trailing" constant="79" id="1A4-br-mJe"/>
+                            <constraint firstItem="eUj-Ho-KBK" firstAttribute="top" secondItem="11u-WG-qP7" secondAttribute="topMargin" constant="55" id="Lwj-z0-ShA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O8y-jL-7FT" secondAttribute="trailing" constant="26" id="NJ3-dx-ztN"/>
+                            <constraint firstItem="hdI-Ix-vjz" firstAttribute="top" secondItem="11u-WG-qP7" secondAttribute="topMargin" constant="69" id="UbI-jp-dTU"/>
+                            <constraint firstItem="vTI-J5-vs0" firstAttribute="centerY" secondItem="VIw-9P-uO2" secondAttribute="centerY" id="WFL-q3-ncR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eUj-Ho-KBK" secondAttribute="trailing" constant="26" id="X0B-yb-uu4"/>
+                            <constraint firstItem="vTI-J5-vs0" firstAttribute="top" secondItem="eH0-hT-hiP" secondAttribute="bottom" constant="36" id="YCy-IN-BWD"/>
+                            <constraint firstItem="vTI-J5-vs0" firstAttribute="leading" secondItem="11u-WG-qP7" secondAttribute="leadingMargin" constant="26" id="Yka-QH-l3G"/>
+                            <constraint firstItem="O8y-jL-7FT" firstAttribute="leading" secondItem="11u-WG-qP7" secondAttribute="leadingMargin" constant="26" id="aMz-bF-8N7"/>
+                            <constraint firstItem="vTI-J5-vs0" firstAttribute="centerX" secondItem="VIw-9P-uO2" secondAttribute="centerX" id="fLi-fm-wJP"/>
+                            <constraint firstItem="eH0-hT-hiP" firstAttribute="leading" secondItem="11u-WG-qP7" secondAttribute="leadingMargin" constant="78" id="fjv-wa-05s"/>
+                            <constraint firstItem="hdI-Ix-vjz" firstAttribute="leading" secondItem="11u-WG-qP7" secondAttribute="leadingMargin" constant="26" id="hak-mS-pEE"/>
+                            <constraint firstItem="eH0-hT-hiP" firstAttribute="top" secondItem="hdI-Ix-vjz" secondAttribute="bottom" constant="21" id="kpt-kj-Epu"/>
+                            <constraint firstItem="O8y-jL-7FT" firstAttribute="top" secondItem="vTI-J5-vs0" secondAttribute="bottom" constant="21" id="xqp-aK-xdM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vTI-J5-vs0" secondAttribute="trailing" constant="26" id="zNA-RD-nll"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VIw-9P-uO2"/>
+                    </view>
+                    <connections>
+                        <outlet property="date" destination="eH0-hT-hiP" id="ZAb-Rn-wXY"/>
+                        <outlet property="detailsTV" destination="O8y-jL-7FT" id="qj9-QG-cmp"/>
+                        <outlet property="movieImage" destination="vTI-J5-vs0" id="W0i-AF-aVm"/>
+                        <outlet property="movieName" destination="hdI-Ix-vjz" id="QWV-7F-wGv"/>
+                        <outlet property="progressView" destination="eUj-Ho-KBK" id="n2r-yP-hhE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4aY-pd-FxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="192.80000000000001" y="161.46926536731635"/>
+        </scene>
+    </scenes>
+</document>
